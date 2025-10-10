@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./icons/bookmark.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <title>Bookmark</title>
+</head>
+
+<body>
+
+    <main class="py-5 position-relative">
+        <div class="container">
+            <div class="text-center">
+                <h1 class=" w-auto d-inline-block pt-2 position-relative">Bookmarker</h1>
+            </div>
+            <div
+                 class="siteBookMark border-dotted-y w-100 p-3 py-4 d-flex flex-column justify-content-center align-items-center gap-4">
+                <div class="text-center">
+                    <h2><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites<i
+                            class="fa-solid fa-bookmark"></i>
+                </div>
+                </h2>
+                <div class="w-100">
+                    <label for="siteName" class="form-label fw-bold"><i class="fa-solid fa-book-bookmark"></i> Site
+                        Name</label>
+                    <input oninput="validateSite(this)" type="text" class="form-control" id="siteName"
+                        placeholder="BookMark Name">
+                </div>
+                <div class="w-100">
+                    <label for="siteUrl" class="form-label fw-bold"><i class="fa-solid fa-link"></i> Site
+                        URL</label>
+                    <input oninput="validateSite(this)" type="text" class="form-control" id="siteUrl"
+                        placeholder="Website URL">
+                </div>
+                <div class="text-center"><button onclick="addSite()" type="button"
+                        class="btn btn-submit px-5">Sumbit</button></div>
+            </div>
+
+            <div class="table-responsive mt-4">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">index</th>
+                            <th scope="col">Website Name</th>
+                            <th scope="col">Visit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rowData">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+<!-- 
+    <footer>
+        <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+            <div class="bg-white rounded-2 p-3 box-content">
+                <header class="d-flex justify-content-between mb-4">
+                    <div>
+                        <i class="fa-solid fa-circle text-danger"></i>
+                        <i class="fa-solid fa-circle text-warning"></i>
+                        <i class="fa-solid fa-circle text-success"></i>
+                    </div>
+                    <button type="button" class="border-0 bg-white" aria-label="close icon"><i
+                            class="fa-solid fa-xmark"></i></button>
+                </header>
+
+                <p class="invalid-message">Site Name or Url is not valid, Please follow the rules below :</p>
+                <p class="invalid-point"><i class="fa-regular fa-circle-right text-danger"></i> Site name must contain
+                    at least 3 characters
+                </p>
+                <p class="invalid-point"><i class="fa-regular fa-circle-right text-danger"></i> Site URL must be a valid
+                    one</p>
+            </div>
+        </div>
+        <div>
+            <h2>fds</h2>
+            <h2>fds</h2>
+            <h2>fds</h2>
+            <h2>fds</h2>
+            <h2>fds</h2>
+            <h2>fds</h2>
+            <h2>fds</h2>
+        </div>
+    </footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+body {
+    background-color: #f7ecde;
+}
+
+*::selection {
+    background-color: #fec260;
+    color: black;
+}
+
+.siteBookMark {
+    margin-top: 55px;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    color: #352E28;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    background-color: #fec260;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    transition: 350ms all ease-in;
+}
+
+h1:hover::before {
+    height: 57%;
+}
+
+h2 {
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
+    color: #212529;
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+input::placeholder {
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+.btn {
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+.btn-submit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+
+.btn-visit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+
+.btn-delete {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
+
+table {
+    background-color: white;
+}
+
+.border-dotted-y {
+    border-top: 0.125rem dotted black;
+    border-bottom: 0.125rem dotted black;
+}
+
+.form-control:focus {
+    color: #212529 !important;
+    background-color: #fff !important;
+    border-color: #d99c39 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 4px #fec26055 !important;
+}
+
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.25) !important;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+    border-color: #198754 !important;
+    box-shadow: 0 0 0 4px rgba(25, 135, 84, 0.25) !important;
+}
+
+tr {
+    vertical-align: middle;
+}
+
+.box-content {
+    width: 31.25rem;
+}
+
+.invalid-message {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.7063rem;
+}
+
+.invalid-point {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+}
